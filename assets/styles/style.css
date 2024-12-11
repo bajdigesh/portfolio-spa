@@ -30,140 +30,140 @@
 }
 @font-face {
   font-family: "Inconsolata";
-  src: local("Inconsolata SemiBold"), local("Inconsolata-SemiBold"), url("../../fonts/Inconsolata-SemiBold.woff2") format("woff2"), url("../../fonts/Inconsolata-SemiBold.woff") format("woff");
+  src: local("Inconsolata SemiBold"), local("Inconsolata-SemiBold"), url("../../assets/fonts/Inconsolata-SemiBold.woff2") format("woff2"), url("../../assets/fonts/Inconsolata-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inconsolata";
-  src: local("Inconsolata Black"), local("Inconsolata-Black"), url("../../fonts/Inconsolata-Black.woff2") format("woff2"), url("../../fonts/Inconsolata-Black.woff") format("woff");
+  src: local("Inconsolata Black"), local("Inconsolata-Black"), url("../../assets/fonts/Inconsolata-Black.woff2") format("woff2"), url("../../assets/fonts/Inconsolata-Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inconsolata";
-  src: local("Inconsolata Medium"), local("Inconsolata-Medium"), url("../../fonts/Inconsolata-Medium.woff2") format("woff2"), url("../../fonts/Inconsolata-Medium.woff") format("woff");
+  src: local("Inconsolata Medium"), local("Inconsolata-Medium"), url("../../assets/fonts/Inconsolata-Medium.woff2") format("woff2"), url("../../assets/fonts/Inconsolata-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Inconsolata";
-  src: local("Inconsolata Regular"), local("Inconsolata-Regular"), url("../../fonts/Inconsolata-Regular.woff2") format("woff2"), url("../../fonts/Inconsolata-Regular.woff") format("woff");
+  src: local("Inconsolata Regular"), local("Inconsolata-Regular"), url("../../assets/fonts/Inconsolata-Regular.woff2") format("woff2"), url("../../assets/fonts/Inconsolata-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono Bold"), local("JetBrainsMono-Bold"), url("../../fonts/JetBrainsMono-Bold.woff2") format("woff2"), url("../../fonts/JetBrainsMono-Bold.woff") format("woff");
+  src: local("JetBrains Mono Bold"), local("JetBrainsMono-Bold"), url("../../assets/fonts/JetBrainsMono-Bold.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-Bold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono ExtraBold"), local("JetBrainsMono-ExtraBold"), url("../../fonts/JetBrainsMono-ExtraBold.woff2") format("woff2"), url("../../fonts/JetBrainsMono-ExtraBold.woff") format("woff");
+  src: local("JetBrains Mono ExtraBold"), local("JetBrainsMono-ExtraBold"), url("../../assets/fonts/JetBrainsMono-ExtraBold.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-ExtraBold.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono ExtraLight"), local("JetBrainsMono-ExtraLight"), url("../../fonts/JetBrainsMono-ExtraLight.woff2") format("woff2"), url("../../fonts/JetBrainsMono-ExtraLight.woff") format("woff");
+  src: local("JetBrains Mono ExtraLight"), local("JetBrainsMono-ExtraLight"), url("../../assets/fonts/JetBrainsMono-ExtraLight.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-ExtraLight.woff") format("woff");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono Bold Italic"), local("JetBrainsMono-BoldItalic"), url("../../fonts/JetBrainsMono-BoldItalic.woff2") format("woff2"), url("../../fonts/JetBrainsMono-BoldItalic.woff") format("woff");
+  src: local("JetBrains Mono Bold Italic"), local("JetBrainsMono-BoldItalic"), url("../../assets/fonts/JetBrainsMono-BoldItalic.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-BoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono ExtraBold Italic"), local("JetBrainsMono-ExtraBoldItalic"), url("../../fonts/JetBrainsMono-ExtraBoldItalic.woff2") format("woff2"), url("../../fonts/JetBrainsMono-ExtraBoldItalic.woff") format("woff");
+  src: local("JetBrains Mono ExtraBold Italic"), local("JetBrainsMono-ExtraBoldItalic"), url("../../assets/fonts/JetBrainsMono-ExtraBoldItalic.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-ExtraBoldItalic.woff") format("woff");
   font-weight: bold;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono ExtraLight Italic"), local("JetBrainsMono-ExtraLightItalic"), url("../../fonts/JetBrainsMono-ExtraLightItalic.woff2") format("woff2"), url("../../fonts/JetBrainsMono-ExtraLightItalic.woff") format("woff");
+  src: local("JetBrains Mono ExtraLight Italic"), local("JetBrainsMono-ExtraLightItalic"), url("../../assets/fonts/JetBrainsMono-ExtraLightItalic.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-ExtraLightItalic.woff") format("woff");
   font-weight: 200;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono Light Italic"), local("JetBrainsMono-LightItalic"), url("../../fonts/JetBrainsMono-LightItalic.woff2") format("woff2"), url("../../fonts/JetBrainsMono-LightItalic.woff") format("woff");
+  src: local("JetBrains Mono Light Italic"), local("JetBrainsMono-LightItalic"), url("../../assets/fonts/JetBrainsMono-LightItalic.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-LightItalic.woff") format("woff");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono Light"), local("JetBrainsMono-Light"), url("../../fonts/JetBrainsMono-Light.woff2") format("woff2"), url("../../fonts/JetBrainsMono-Light.woff") format("woff");
+  src: local("JetBrains Mono Light"), local("JetBrainsMono-Light"), url("../../assets/fonts/JetBrainsMono-Light.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono Regular"), local("JetBrainsMono-Regular"), url("../../fonts/JetBrainsMono-Regular.woff2") format("woff2"), url("../../fonts/JetBrainsMono-Regular.woff") format("woff");
+  src: local("JetBrains Mono Regular"), local("JetBrainsMono-Regular"), url("../../assets/fonts/JetBrainsMono-Regular.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono Medium"), local("JetBrainsMono-Medium"), url("../../fonts/JetBrainsMono-Medium.woff2") format("woff2"), url("../../fonts/JetBrainsMono-Medium.woff") format("woff");
+  src: local("JetBrains Mono Medium"), local("JetBrainsMono-Medium"), url("../../assets/fonts/JetBrainsMono-Medium.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono Italic"), local("JetBrainsMono-Italic"), url("../../fonts/JetBrainsMono-Italic.woff2") format("woff2"), url("../../fonts/JetBrainsMono-Italic.woff") format("woff");
+  src: local("JetBrains Mono Italic"), local("JetBrainsMono-Italic"), url("../../assets/fonts/JetBrainsMono-Italic.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-Italic.woff") format("woff");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono Medium Italic"), local("JetBrainsMono-MediumItalic"), url("../../fonts/JetBrainsMono-MediumItalic.woff2") format("woff2"), url("../../fonts/JetBrainsMono-MediumItalic.woff") format("woff");
+  src: local("JetBrains Mono Medium Italic"), local("JetBrainsMono-MediumItalic"), url("../../assets/fonts/JetBrainsMono-MediumItalic.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono SemiBold"), local("JetBrainsMono-SemiBold"), url("../../fonts/JetBrainsMono-SemiBold.woff2") format("woff2"), url("../../fonts/JetBrainsMono-SemiBold.woff") format("woff");
+  src: local("JetBrains Mono SemiBold"), local("JetBrainsMono-SemiBold"), url("../../assets/fonts/JetBrainsMono-SemiBold.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono Thin"), local("JetBrainsMono-Thin"), url("../../fonts/JetBrainsMono-Thin.woff2") format("woff2"), url("../../fonts/JetBrainsMono-Thin.woff") format("woff");
+  src: local("JetBrains Mono Thin"), local("JetBrainsMono-Thin"), url("../../assets/fonts/JetBrainsMono-Thin.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-Thin.woff") format("woff");
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono SemiBold Italic"), local("JetBrainsMono-SemiBoldItalic"), url("../../fonts/JetBrainsMono-SemiBoldItalic.woff2") format("woff2"), url("../../fonts/JetBrainsMono-SemiBoldItalic.woff") format("woff");
+  src: local("JetBrains Mono SemiBold Italic"), local("JetBrainsMono-SemiBoldItalic"), url("../../assets/fonts/JetBrainsMono-SemiBoldItalic.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-SemiBoldItalic.woff") format("woff");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "JetBrains Mono";
-  src: local("JetBrains Mono Thin Italic"), local("JetBrainsMono-ThinItalic"), url("../../fonts/JetBrainsMono-ThinItalic.woff2") format("woff2"), url("../../fonts/JetBrainsMono-ThinItalic.woff") format("woff");
+  src: local("JetBrains Mono Thin Italic"), local("JetBrainsMono-ThinItalic"), url("../../assets/fonts/JetBrainsMono-ThinItalic.woff2") format("woff2"), url("../../assets/fonts/JetBrainsMono-ThinItalic.woff") format("woff");
   font-weight: 100;
   font-style: italic;
   font-display: swap;
