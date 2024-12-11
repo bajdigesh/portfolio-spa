@@ -12,15 +12,25 @@ const works = [
     role: "Lead UI/UX designer",
   },
   {
+    title: "Jaslaya",
+    description: "An ecommerce site for wholeselling and retailing purpose",
+    link: "https://jaslaya.com/",
+    problem:
+      "The client felt lack of wholeselling ecommerce portals that do out of city deliveries too. All the ecommerce are based on the same cities.",
+    solution:
+      "Created a ecommerce site that lets vendors do wholeselling as well as retailing deliver in and out of the city. We created simple and visually pleasing UI to let users know about the different offers on the produts.",
+    role: "Lead UI/UX designer",
+  },
+  {
     title: "Book My Event",
     description:
       "A conceptual mobile app that lets users compare different venues for their events.",
     link: "https://google.com/",
     thumb: "book-my-event.png",
     problem:
-      "Business owner didn't had any online platform to showcase their activities and get the required attention for funding and volunteering. Kakshyalaya seeks to generate necessary funds through donations and manpower through volunteering.",
+      "The clients need to visit all the halls and event organisaers personally to get detailed comparision of the venues. Visiting the venues is time consuming and hectic in traffic. It causes loss of time and energy that can be used in other works.",
     solution:
-      "We created a simple websie that allows the owner to showcase their activities. It helps the business to outline their project goals and seek volunteering services.",
+      "We created a that lets users compare between the different venues and book the desired ones.",
     role: "Lead UI/UX designer, Frontend Develoepr",
   },
 ];
