@@ -1,0 +1,12 @@
+$textWeights: (
+	'strong': 700,
+	'medium': 600,
+	'regular': 500,
+	'light': 400
+	);
+
+@each $textWeightKey, $textWeightValue in $textWeights {
+	.text-#{$textWeightKey} {
+		font-weight: #{$textWeightValue}
+	}
+}

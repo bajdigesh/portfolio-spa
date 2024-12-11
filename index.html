@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digesh Bajracharya</title>
+
+    <link rel="icon" type="image/png" href="icon.png" />
+    <link rel="icon" sizes="192x192" href="icon.png" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <meta name="msapplication-square310x310logo" content="icon.png" />
+
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <meta
+      name="description"
+      content="I am a passionate UI designer with a keen eye for creating intuitive and visually stunning user interfaces."
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, SCSS, JavaScript, Frontend, React, Designer, Developer, Freelance, Nepal, Lalitpur, User Interface, UI, Design"
+    />
+
+    <meta name="theme-color" content="#2f2f2f" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <script type="module" src="app.js"></script>
+    <script type="module" src="data.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="/">Home</a>
+          <a href="./assets/files/resume-digesh.pdf" download>Resume</a>
+        </nav>
+
+        <span>
+          <input type="checkbox" id="theme-toggler" onclick="changeTheme()" />
+          <label for="theme-toggler" aria-label="Change Theme">Theme</label>
+
+          <svg
+            id="dark"
+            fill="currentColor"
+            height="512"
+            viewBox="0 0 512 512"
+            width="512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M264,480A232,232,0,0,1,32,248C32,154,86,69.72,169.61,33.33a16,16,0,0,1,21.06,21.06C181.07,76.43,176,104.66,176,136c0,110.28,89.72,200,200,200,31.34,0,59.57-5.07,81.61-14.67a16,16,0,0,1,21.06,21.06C442.28,426,358,480,264,480Z"
+            />
+          </svg>
+
+          <svg
+            id="light"
+            fill="currentColor"
+            height="200px"
+            width="200px"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 207.628 207.628"
+            xml:space="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <circle cx="103.814" cy="103.814" r="45.868"></circle>
+              <path
+                d="M103.814,157.183c-29.427,0-53.368-23.941-53.368-53.368s23.941-53.368,53.368-53.368s53.368,23.941,53.368,53.368 S133.241,157.183,103.814,157.183z M103.814,65.446c-21.156,0-38.368,17.212-38.368,38.368s17.212,38.368,38.368,38.368 s38.368-17.212,38.368-38.368S124.97,65.446,103.814,65.446z"
+              ></path>
+              <path
+                d="M103.814,39.385c-4.142,0-7.5-3.358-7.5-7.5V7.5c0-4.142,3.358-7.5,7.5-7.5s7.5,3.358,7.5,7.5v24.385 C111.314,36.027,107.956,39.385,103.814,39.385z"
+              ></path>
+              <path
+                d="M103.814,207.628c-4.142,0-7.5-3.358-7.5-7.5v-24.385c0-4.142,3.358-7.5,7.5-7.5s7.5,3.358,7.5,7.5v24.385 C111.314,204.271,107.956,207.628,103.814,207.628z"
+              ></path>
+              <path
+                d="M200.128,111.314h-24.385c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h24.385c4.142,0,7.5,3.358,7.5,7.5 S204.271,111.314,200.128,111.314z"
+              ></path>
+              <path
+                d="M31.885,111.314H7.5c-4.142,0-7.5-3.358-7.5-7.5s3.358-7.5,7.5-7.5h24.385c4.142,0,7.5,3.358,7.5,7.5 S36.027,111.314,31.885,111.314z"
+              ></path>
+              <path
+                d="M154.676,60.452c-1.919,0-3.839-0.732-5.303-2.197c-2.929-2.929-2.929-7.678,0-10.606l17.243-17.242 c2.929-2.929,7.678-2.93,10.606,0c2.929,2.929,2.929,7.678,0,10.606l-17.243,17.242C158.515,59.72,156.595,60.452,154.676,60.452z"
+              ></path>
+              <path
+                d="M35.709,179.419c-1.919,0-3.839-0.732-5.303-2.197c-2.929-2.929-2.929-7.678,0-10.606l17.243-17.243 c2.929-2.929,7.678-2.929,10.606,0c2.929,2.929,2.929,7.678,0,10.606l-17.243,17.243C39.548,178.687,37.629,179.419,35.709,179.419z "
+              ></path>
+              <path
+                d="M171.918,179.419c-1.919,0-3.839-0.732-5.303-2.197l-17.243-17.243c-2.929-2.929-2.929-7.678,0-10.606 c2.929-2.929,7.678-2.929,10.606,0l17.243,17.243c2.929,2.929,2.929,7.678,0,10.606 C175.757,178.687,173.838,179.419,171.918,179.419z"
+              ></path>
+              <path
+                d="M52.952,60.452c-1.919,0-3.839-0.732-5.303-2.197L30.406,41.013c-2.929-2.929-2.929-7.677,0-10.606 c2.929-2.929,7.678-2.93,10.606,0l17.243,17.242c2.929,2.929,2.929,7.677,0,10.606C56.791,59.72,54.872,60.452,52.952,60.452z"
+              ></path>
+            </g>
+          </svg>
+        </span>
+      </div>
+    </header>
+
+    <main id="app"></main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; Copyright, Digesh Bajracharya</p>
+
+        <nav>
+          <a href="mailto:digesh047@gmail.com">digesh047@gmail.com</a>
+          <a href="tel: +977 9849102751">+977 9849102751</a>
+          <a href="#">in</a>
+          <a href="#">Be</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script>
+      const tagSelector = document.querySelector("body");
+      const colorScheme =
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? "dark"
+          : "light";
+
+      if (localStorage.getItem("theme") === null) {
+        localStorage.setItem("theme", colorScheme);
+      }
+
+      tagSelector.setAttribute("data-theme", localStorage.getItem("theme"));
+
+      function changeTheme() {
+        const existingTheme = localStorage.getItem("theme");
+        const newTheme = existingTheme === "light" ? "dark" : "light";
+        localStorage.setItem("theme", newTheme);
+        tagSelector.setAttribute("data-theme", newTheme);
+      }
+    </script>
+  </body>
+</html>

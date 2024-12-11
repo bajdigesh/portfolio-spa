@@ -1,0 +1,37 @@
+@use '../abstracts' as *;
+
+:root {
+	color-scheme: light dark;
+
+	@each $colorTheme, $colorThemeMap in $colorThemes {
+		@each $colorKeyName, $colorKeyValue in $colorThemeMap {
+			--clr-#{$colorTheme}-#{$colorKeyName}: #{$colorKeyValue}
+		}
+	}
+
+	--bodyBackground: var(--clr-light-500);
+	--bodyFontColor: var(--clr-dark-500);
+	--fontColorLight: var(--clr-dark-400);
+
+	
+	&:has(body[data-theme='dark']) {
+		--bodyBackground: var(--clr-dark-500);
+		--bodyFontColor: var(--clr-light-500);
+		--fontColorLight: var(--clr-light-400);		
+	}
+
+	&:has(body[data-theme='light']) {
+		--bodyBackground: var(--clr-light-500);
+		--bodyFontColor: var(--clr-dark-500);
+		--fontColorLight: var(--clr-dark-400);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bodyBackground: var(--clr-dark-500);
+		--bodyFontColor: var(--clr-light-500);
+		--fontColorLight: var(--clr-light-400);
+	}
+}
+
