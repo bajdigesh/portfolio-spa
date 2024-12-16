@@ -1,9 +1,21 @@
 const works = [
   {
+    title: "EK NEPAL",
+    description:
+      "Ek Nepal is the news aggregator service developed by Media Alliance Nepal. Ek Nepal presents content of the members of Media Alliance Nepal, the umbrella organization of mainstream media of Nepal.",
+    link: "https://www.eknepal.com/",
+    thumb: "eknepal.png",
+    problem:
+      "Fake News is a big problem in our society today. On social networks, misleading and inaccurate information spreads like wildfire, reaching millions of users within minutes. carrying a tremendous threat to confuse and impact our society in a negative way.",
+    solution:
+      "We createdd a news aggregator app for the main stream media of Nepal. Media controls the minds of masses so EK Nepal is dedicated to list real news only.",
+    role: "Lead UI/UX designer",
+  },
+  {
     title: "Kakshyalaya",
     description:
       "A website for a NGO showcasing their works and contribution in rural education in Nepal.",
-    link: "https://google.com/",
+    link: "https://www.kakshyalaya.org/",
     thumb: "kakshyalaya.png",
     problem:
       "Business owner didn't had any online platform to showcase their activities and get the required attention for funding and volunteering. Kakshyalaya seeks to generate necessary funds through donations and manpower through volunteering.",
@@ -26,7 +38,7 @@ const works = [
     title: "Book My Event",
     description:
       "A conceptual mobile app that lets users compare different venues for their events.",
-    link: "https://google.com/",
+    link: "https://www.figma.com/proto/cCTLPdLXilNSoKMVsSUeJ8/bookmyparty?page-id=9%3A2&node-id=116-189&p=f&viewport=721%2C1024%2C0.22&t=5cV8T2kUqmQCqUXZ-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=9%3A3",
     thumb: "book-my-event.png",
     problem:
       "The clients need to visit all the halls and event organisaers personally to get detailed comparision of the venues. Visiting the venues is time consuming and hectic in traffic. It causes loss of time and energy that can be used in other works.",
@@ -46,7 +58,7 @@ const renderPortfolios = () => {
       for (let i = 0; i < works.length; i++) {
         worksListItem += "<li>";
         worksListItem += "<figure>";
-        worksListItem += '<img src="/assets/images/' + works[i].thumb + '">';
+        worksListItem += `<img src="/assets/images/${works[i].thumb}" alt="${works[i].title}">`;
         worksListItem += "</figure>";
         worksListItem += "<h4>";
         worksListItem += works[i].title;

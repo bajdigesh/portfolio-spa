@@ -179,7 +179,7 @@ html, body {
 }
 
 body {
-  font-family: "JetBrains Mono", mono, seriff;
+  font-family: "JetBrains Mono", sans-serif;
   line-height: 1.43;
   background: var(--bodyBackground);
   color: var(--bodyFontColor);
@@ -312,7 +312,7 @@ header + section::after {
 
 h2 {
   font-size: clamp(1.35rem, 3.5vw + 1rem, 4rem);
-  font-family: "Inconsolata", mono, seriff;
+  font-family: "Inconsolata", sans-serif;
   font-weight: 400;
   text-align: center;
   line-height: 1.13;
@@ -327,7 +327,7 @@ h2 {
 #works-list {
   container-type: inline-size;
   display: grid;
-  gap: 3rem;
+  gap: 5rem;
   padding-inline-start: 2rem;
 }
 #works-list li {
@@ -335,7 +335,7 @@ h2 {
   grid-template-columns: 1fr min(100%, 28.15rem);
   grid-template-rows: auto auto 1fr;
   column-gap: 3rem;
-  row-gap: 0.75rem;
+  row-gap: 1rem;
 }
 #works-list li figure {
   grid-row: 1/-1;
@@ -369,7 +369,7 @@ footer {
   background: var(--clr-dark-600);
   color: var(--clr-light-400);
   font-size: 0.875rem;
-  font-family: "Inconsolata", mono, seriff;
+  font-family: "Inconsolata", sans-serif;
   font-weight: 400;
   container-type: inline-size;
 }
@@ -480,6 +480,19 @@ footer nav a:not(:last-of-type)::after {
     grid-row: 1;
   }
 }
+#error h3 {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+}
+#error p {
+  font-size: 1.2rem;
+  margin-block-start: 0.75rem;
+  opacity: 0.8;
+}
+#error a {
+  font-weight: 900;
+  border-bottom: 1px dashed currentColor;
+}
+
 .text-strong {
   font-weight: 700;
 }

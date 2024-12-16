@@ -1,0 +1,14 @@
+#error {
+  h3 {
+    font-size: clamp(1.25rem, 3vw, 2rem);
+  }
+  p {
+    font-size: 1.2rem;
+    margin-block-start: 0.75rem;
+    opacity: 0.8;
+  }
+  a {
+    font-weight: 900;
+    border-bottom: 1px dashed currentColor;
+  }
+}

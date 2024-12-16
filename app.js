@@ -2,6 +2,7 @@ const routes = {
   "/": { template: "/pages/home/index.html" },
   kakshyalaya: { template: "pages/case-study/index.html" },
   jaslaya: { template: "pages/case-study/index.html" },
+  "ek-nepal": { template: "pages/case-study/index.html" },
   "book-my-event": { template: "pages/case-study/index.html" },
   error: { template: "/pages/error/index.html" },
 };
