@@ -35,93 +35,95 @@ const works = [
   },
 ];
 
-var worksListItem = "";
-let worksListElement = "";
-var hasRendered = false;
+const renderPortfolios = () => {
+  setInterval(() => {
+    let worksListItem = "";
+    let worksListElement = "";
+    worksListElement = document.getElementById("works-list");
 
-const renderPortfolios = setInterval(() => {
-  worksListElement = document.getElementById("works-list");
-  if (worksListElement && !hasRendered) {
-    for (let i = 0; i < works.length; i++) {
-      worksListItem += "<li>";
-      worksListItem += "<figure>";
-      worksListItem += '<img src="/assets/images/' + works[i].thumb + '">';
-      worksListItem += "</figure>";
-      worksListItem += "<h4>";
-      worksListItem += works[i].title;
-      worksListItem += "</h4>";
-      worksListItem += "<p>";
-      worksListItem += works[i].description;
-      worksListItem += "</p>";
-      worksListItem +=
-        '<a href="#' + works[i].title.toLowerCase().replaceAll(" ", "-") + '">';
-      worksListItem += "View Project";
-      worksListItem += "</a>";
-      worksListItem += "</li>";
-    }
-
-    worksListElement.innerHTML = worksListItem;
-    hasRendered = true;
-  }
-}, 500);
-
-setTimeout(() => {
-  clearInterval(renderPortfolios);
-}, 10000);
-
-let caseStudyElements = "";
-var caseStudyRendered = false;
-
-const renderCaseStudy = setInterval(() => {
-  works.forEach((portfolio) => {
-    const titleSlug = portfolio["title"].toLowerCase().replaceAll(" ", "-");
-    const urlLocation = window.location.hash.replace("#", "");
-
-    if (!caseStudyRendered && titleSlug === urlLocation) {
-      caseStudyElements += "<div class='project-details'>";
-      caseStudyElements += "<div class='project-summary'>";
-      caseStudyElements += "<h1>" + portfolio["title"] + "</h1>";
-      caseStudyElements += "<p>" + portfolio["description"] + "</p>";
-      caseStudyElements += "</div>";
-      caseStudyElements += "<figure>";
-      caseStudyElements +=
-        "<img src='/assets/images/" +
-        portfolio["thumb"] +
-        "' alt='Image " +
-        portfolio["title"] +
-        "' />";
-      caseStudyElements += "</figure>";
-      caseStudyElements += "</div>";
-
-      caseStudyElements += "<div class='project-study'>";
-
-      if (portfolio["problem"] !== "") {
-        caseStudyElements += "<div class='problems'>";
-        caseStudyElements += "<h3> Problem </h3>";
-        caseStudyElements += "<p data-detail='problem'>";
-        caseStudyElements += portfolio["problem"];
-        caseStudyElements += "</p>";
-        caseStudyElements += "</div>";
+    if (!worksListElement.childNodes.length) {
+      for (let i = 0; i < works.length; i++) {
+        worksListItem += "<li>";
+        worksListItem += "<figure>";
+        worksListItem += '<img src="/assets/images/' + works[i].thumb + '">';
+        worksListItem += "</figure>";
+        worksListItem += "<h4>";
+        worksListItem += works[i].title;
+        worksListItem += "</h4>";
+        worksListItem += "<p>";
+        worksListItem += works[i].description;
+        worksListItem += "</p>";
+        worksListItem +=
+          '<a href="#' +
+          works[i].title.toLowerCase().replaceAll(" ", "-") +
+          '">';
+        worksListItem += "View Project";
+        worksListItem += "</a>";
+        worksListItem += "</li>";
       }
 
-      if (portfolio["solution"] !== "") {
-        caseStudyElements += "<div class='solutions'>";
-        caseStudyElements += "<h3> Solution </h3>";
-        caseStudyElements += "<p data-detail='solution'>";
-        caseStudyElements += portfolio["solution"];
-        caseStudyElements += "</p>";
-        caseStudyElements += "</div>";
-      }
-
-      caseStudyElements += "</div>";
-
-      document.getElementById("case-study-content").innerHTML =
-        caseStudyElements;
-
-      caseStudyRendered = true;
+      worksListElement.innerHTML = worksListItem;
     }
-  });
-}, 500);
-setTimeout(() => {
-  clearInterval(renderCaseStudy);
-}, 10000);
+  }, 500);
+};
+renderPortfolios();
+
+const renderCaseStudy = () => {
+  setInterval(() => {
+    let caseStudyElements = "";
+    let caseStudyContainer = "";
+    caseStudyContainer = document.getElementById("case-study-content");
+
+    works.forEach((portfolio) => {
+      const titleSlug = portfolio["title"].toLowerCase().replaceAll(" ", "-");
+      const urlLocation = window.location.hash.replace("#", "");
+
+      if (!caseStudyContainer.childNodes.length && titleSlug === urlLocation) {
+        caseStudyElements += "<div class='project-details'>";
+        caseStudyElements += "<div class='project-summary'>";
+        caseStudyElements += "<h1>" + portfolio["title"] + "</h1>";
+        caseStudyElements += "<p>" + portfolio["description"] + "</p>";
+        caseStudyElements += "<h3> Role </h3>";
+        caseStudyElements += "<p>" + portfolio["role"] + "</p>";
+        caseStudyElements += "</div>";
+        caseStudyElements += "<figure>";
+        caseStudyElements +=
+          "<img src='/assets/images/" +
+          portfolio["thumb"] +
+          "' alt='Image " +
+          portfolio["title"] +
+          "' />";
+        caseStudyElements += "</figure>";
+        caseStudyElements += "</div>";
+
+        caseStudyElements += "<div class='project-study'>";
+
+        if (portfolio["problem"] !== "") {
+          caseStudyElements += "<div class='problems'>";
+          caseStudyElements += "<h3> Problem </h3>";
+          caseStudyElements += "<p data-detail='problem'>";
+          caseStudyElements += portfolio["problem"];
+          caseStudyElements += "</p>";
+          caseStudyElements += "</div>";
+        }
+
+        if (portfolio["solution"] !== "") {
+          caseStudyElements += "<div class='solutions'>";
+          caseStudyElements += "<h3> Solution </h3>";
+          caseStudyElements += "<p data-detail='solution'>";
+          caseStudyElements += portfolio["solution"];
+          caseStudyElements += "</p>";
+          caseStudyElements += "</div>";
+        }
+
+        caseStudyElements += "</div>";
+
+        caseStudyContainer.innerHTML = caseStudyElements;
+      }
+    });
+  }, 500);
+};
+
+renderCaseStudy();
+
+console.log(renderCaseStudyView);

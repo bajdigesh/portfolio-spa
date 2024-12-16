@@ -1,6 +1,7 @@
 const routes = {
   "/": { template: "/pages/home/index.html" },
   kakshyalaya: { template: "pages/case-study/index.html" },
+  jaslaya: { template: "pages/case-study/index.html" },
   "book-my-event": { template: "pages/case-study/index.html" },
   error: { template: "/pages/error/index.html" },
 };
@@ -26,6 +27,7 @@ const router = async () => {
     document.getElementById("app").innerHTML = content;
   }
 };
+
 window.addEventListener("hashchange", function () {
   router();
 });
