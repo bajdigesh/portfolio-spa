@@ -15,6 +15,7 @@ const works = [
     title: "Jaslaya",
     description: "An ecommerce site for wholeselling and retailing purpose",
     link: "https://jaslaya.com/",
+    thumb: "jaslaya.png",
     problem:
       "The client felt lack of wholeselling ecommerce portals that do out of city deliveries too. All the ecommerce are based on the same cities.",
     solution:
@@ -41,7 +42,7 @@ const renderPortfolios = () => {
     let worksListElement = "";
     worksListElement = document.getElementById("works-list");
 
-    if (!worksListElement.childNodes.length) {
+    if (!!worksListElement && !worksListElement.childNodes.length) {
       for (let i = 0; i < works.length; i++) {
         worksListItem += "<li>";
         worksListItem += "<figure>";
@@ -78,7 +79,11 @@ const renderCaseStudy = () => {
       const titleSlug = portfolio["title"].toLowerCase().replaceAll(" ", "-");
       const urlLocation = window.location.hash.replace("#", "");
 
-      if (!caseStudyContainer.childNodes.length && titleSlug === urlLocation) {
+      if (
+        !!caseStudyContainer &&
+        !caseStudyContainer.childNodes.length &&
+        titleSlug === urlLocation
+      ) {
         caseStudyElements += "<div class='project-details'>";
         caseStudyElements += "<div class='project-summary'>";
         caseStudyElements += "<h1>" + portfolio["title"] + "</h1>";
@@ -125,5 +130,3 @@ const renderCaseStudy = () => {
 };
 
 renderCaseStudy();
-
-console.log(renderCaseStudyView);
