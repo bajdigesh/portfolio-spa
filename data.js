@@ -58,7 +58,7 @@ const renderPortfolios = () => {
       for (let i = 0; i < works.length; i++) {
         worksListItem += "<li>";
         worksListItem += "<figure>";
-        worksListItem += `<img src="/assets/images/${works[i].thumb}" alt="${works[i].title}">`;
+        worksListItem += `<img src="/assets/images/${works[i].thumb}" alt="${works[i].title}" loading="lazy">`;
         worksListItem += "</figure>";
         worksListItem += "<h4>";
         worksListItem += works[i].title;
@@ -105,7 +105,7 @@ const renderCaseStudy = () => {
         caseStudyElements += "</div>";
         caseStudyElements += "<figure>";
         caseStudyElements +=
-          "<img src='/assets/images/" +
+          "<img loading='lazy' src='/assets/images/" +
           portfolio["thumb"] +
           "' alt='Image " +
           portfolio["title"] +
