@@ -74,11 +74,6 @@ header {
         cursor: pointer;
       }
 
-      label {
-        text-indent: -999999rem;
-        display: none;
-      }
-
       svg {
         width: 1.25rem;
         height: auto;
@@ -122,7 +117,7 @@ h2 {
 
 #portfolio {
   h3 {
-    color: var(--clr-light-100);
+    color: var(--clr-light-300);
     font-size: clamp(1.25rem, 5vw + 1rem, 3.75rem);
     margin-block-end: 2.5rem;
   }
